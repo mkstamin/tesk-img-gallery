@@ -18,7 +18,7 @@ const Item = ({
         index === 0
           ? "col-span-8 sm:col-span-4 row-span-2"
           : "col-span-4 sm:col-span-2"
-      } overflow-hidden relative group shadow-[0px_0px_2px_0px_rgba(0,0,0,0.25)]`}
+      } overflow-hidden relative group shadow-[0px_0px_2px_0px_rgba(0,0,0,0.4)]`}
       style={{ transformOrigin: "0 0", borderRadius: "10px", ...style }}
       ref={setNodeRef}
       {...attributes}
@@ -29,16 +29,11 @@ const Item = ({
           isDragging ? "shadow-md" : ""
         } ${copyOpacity ? "opacity-50" : "opacity-100"}`}
       >
-        {/* When checked */}
-        {/* <div className="bg-white/50 absolute top-0 left-0 w-full h-full">
-          <input type="checkbox" className="w-5 h-5 m-4" />
-        </div> */}
-
         {/* when hover */}
         {!isDragging ? (
           <div
             className={`absolute top-0 left-0 w-full h-full ${
-              isSelected ? "bg-white/50" : "hover:bg-black/40"
+              isSelected ? "bg-white/60" : "hover:bg-black/40"
             } duration-700 ease-in-out`}
           >
             <input
