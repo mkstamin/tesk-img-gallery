@@ -1,6 +1,6 @@
 # `Photo Gallery`
 
-## [live link here](https://react.dev/)
+## [live link here](https://tesk-img-gallery.vercel.app/)
 
 ## How to run
 
@@ -8,7 +8,7 @@ Follow the instructions below to run it:
 
 1. Clone this repository
    ```sh
-   git clone https://github.com/mkstamin/breakingbad.git
+   git clone https://github.com/mkstamin/tesk-img-gallery.git
    ```
 2. Run
    ```sh
