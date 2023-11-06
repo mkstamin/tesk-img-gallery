@@ -2,6 +2,7 @@ import {
   DndContext,
   DragOverlay,
   MouseSensor,
+  TouchSensor,
   closestCenter,
   useSensor,
   useSensors,
@@ -32,7 +33,10 @@ export default function App() {
    * @constant {Array} sensors - Array of sensors for drag and drop interactions.
    */
   const sensors = useSensors(
-    useSensor(MouseSensor, { activationConstraint: { distance: 5 } })
+    useSensor(MouseSensor, { activationConstraint: { distance: 5 } }),
+    useSensor(TouchSensor, {
+      activationConstraint: { distance: 5 },
+    })
   );
 
   /**
