@@ -158,8 +158,8 @@ export default function App() {
   };
 
   return (
-    <section className="w-screen h-screen flex items-center justify-center overflow-x-hidden">
-      <div className="container mx-auto rounded-lg shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)]">
+    <section className="my-5 flex items-center justify-center overflow-x-hidden">
+      <div className="container mx-auto rounded-lg border shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)]">
         <div className="flex items-center justify-between px-8 border-b-2 pt-10 sm:pt-3 pb-3">
           {/* Conditional Rendering based on Selected Files */}
           {totalSelectedItems().length > 0 ? (
